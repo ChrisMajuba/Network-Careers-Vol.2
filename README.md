@@ -1,2 +1,2 @@
 # cyber-network-website
-A website designed to extract the full capacity of how to use money
+A website designed to use money as a collaboration
