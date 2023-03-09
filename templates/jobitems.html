@@ -1,0 +1,22 @@
+<div class = "border-bottom row" style = "margin-bottom: 20px; padding: 40px">
+          <div class = "col-4"> 
+             <div > 
+                   <h3 > {{i["1"]}} </h3> 
+             </div>
+             <div> <h4 style = "color: rgb(120,120,120)">   {{ i["2"] }}      </h4v> 
+             </div>
+               <h6> Salary: {{i["3"]}} </h6>
+                    {%if "4" in i%}
+             <div> 
+                 <b> {{i["4"]}} </b> 
+             </div>
+                     {% endif %}
+          </div>
+          <div class = "col-4">
+               <p>
+                 {{ i["info"] }}
+               </p>
+          </div>
+          <div class = "text-center col-4"> <button type="button" class="btn btn-outline-primary">Apply</button>
+          </div>
+</div>
