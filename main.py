@@ -11,17 +11,17 @@ from flask import jsonify
 
 i =[{'1': "Data Analyst","2":"Johannesburg","3":30000,"4":"Immediate","info": "We looking for a Data Analyst that is very eager and enthusiastic about analysing Data."},{'1':"Programmer","2":"Pretoria","3":20000,"info":"We looking for a Phython Programmer with execellent computing skills and great ambition"},]
 
-app = Flask(__name__)
+cyber = Flask(__name__)
 
-@app.route("/")
+@cyber.route("/")
 def cyberUniverse():
   return render_template("bootstrap.html", jobs=i)
 #JSON database route, JSON stands for JavaScript Object Notation and it is a file format and it is used for transmitting data in web applications 
-@app.route("/api/jobs")
+@cyber.route("/api/jobs")
 def joblist():
   pass
   return jsonify(i)
   
 if __name__ == "__main__":
-  app.run(host="0.0.0.0",debug=True)
+  cyber.run(host="0.0.0.0",debug=True)
 
