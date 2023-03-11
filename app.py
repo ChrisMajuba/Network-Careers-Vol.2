@@ -19,7 +19,6 @@ def cyberUniverse():
 #JSON database route, JSON stands for JavaScript Object Notation and it is a file format and it is used for transmitting data in web applications 
 @cyber.route("/api/jobs")
 def joblist():
-  pass
   return jsonify(i)
   
 if __name__ == "__main__":
