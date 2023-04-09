@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   {%include "boots_class.html" %}
+    <title>Job Application</title>
+  </head>
+  <body>
+    {%include "navbar.html"%}
+    <div class ="container" style ="margin:100px">
+      
+    </div>
+     <div class = "text-center">
+       {%for job in jobs %}
+            {%if job["id"] == x%}
+            <h1 class = "mb-4"> {{job["title"]}} </h1>
+                 {% include "picrender.html" %}
+             <div class = "container">
+              <h4 class = "mt-4" style = "color: rgb(120,120,120)"> Job Description </h4>
+              <p class = "container" style = "font-size:20px;"> {{job["info"]}} </p>
+             <h4 class = "mt-8"> Salary Description </h4>
+              <p style = "font-size:20px;"> R{{job["salary"]}}</p>
+               
+            {%endif%}
+       {%endfor%}
+     </div>
+
+       {%include "application.html"%}
+       {%include "footer.html"%}
+  </body>
+</html>

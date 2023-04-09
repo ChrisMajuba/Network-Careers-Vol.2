@@ -1,14 +1,14 @@
 <div class = "border-bottom row" style = "margin-bottom: 20px; padding: 40px">
           <div class = "col-6"> 
              <div > 
-                   <h3 > {{i["1"]}} </h3> 
+                   <h3 > {{i["title"]}} </h3> 
              </div>
-             <div> <h4 style = "color: rgb(120,120,120)">   {{ i["2"] }}      </h4v> 
+             <div> <h4 style = "color: rgb(120,120,120)">   {{ i["location"] }}      </h4v> 
              </div>
-               <h6> Salary: {{i["3"]}} </h6>
-                    {%if "4" in i%}
+               <h6> Salary: {{i["salary"]}} </h6>
+                    {%if "salary" in i%}
              <div> 
-                 <b> {{i["4"]}} </b> 
+                 <b> {{i["info"]}} </b> 
              </div>
                      {% endif %}
           </div>
@@ -17,6 +17,6 @@
                  {{ i["info"] }}
                </p>
           </div>
-          <div class = "text-center col-2"> <a href="mailto:NetworkCareers@gmail.com?Subject=Application For {{ i["1"] }} " class="btn btn-primary" role="button" data-bs-toggle="button">Apply</a>
+          <div class = "text-center col-2"> <a href="/ {{i["id"]}}" class="btn btn-primary" role="button" data-bs-toggle="button" >Apply</a>
           </div>
 </div>
